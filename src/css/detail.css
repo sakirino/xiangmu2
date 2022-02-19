@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header {
+    background-color: #e3e4e5;
+    height: 30px;
+}
+
+header .container {
+    position: relative;
+}
+
+header .locationBox {
+    position: absolute;
+    left: 0;
+}
+
+header .locationBox a {
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+header ul {
+    display: flex;
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+header .tagBox ul li a {
+    text-decoration: none;
+    padding: 0 15px;
+    border-left: 1px solid #ccc;
+}
+
+header .tagBox ul li a:hover {
+    color: red;
+}
+
+.searchBox {
+    height: 140px;
+    background-color: #fff;
+}
+
+.searchBox .container {
+    position: relative;
+}
+
+.searchBox .logoB {
+    width: 190px;
+    height: 120px;
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+}
+
+.searchBox .Search {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.Search img {
+    width: 125px;
+    height: 40px;
+    position: absolute;
+    top: 18px;
+    left: 350px;
+    display: none;
+}
+
+.searchActive {
+    border-bottom: 1px solid red;
+}
+
+.searchInput {
+    width: 488px;
+    height: 32px;
+    border: 1px solid red;
+    position: relative;
+    left: 550px;
+    top: 25px;
+}
+
+.searchInput input {
+    font-size: 12px;
+    margin-left: 17px;
+    margin-top: 2px;
+    width: 400px;
+    height: 26px;
+    color: #333;
+    border: none;
+}
+
+.searchInput button {
+    position: absolute;
+    right: 0;
+    border: none;
+    width: 58px;
+    height: 31px;
+    background-color: red;
+}
+
+.searchInput button span {
+    color: #fff;
+    cursor: pointer;
+}
+
+.Search .cart {
+    width: 130px;
+    height: 32px;
+    border: 1px solid #eee;
+    position: absolute;
+    left: 1080px;
+    top: 25px;
+}
+
+.cart span {
+    line-height: 32px;
+    color: red;
+    margin-left: 25px;
+}
+
+.cart a {
+    line-height: 32px;
+    color: red;
+    text-decoration: none;
+    font-size: 12px;
+    display: inline;
+}
+
+.cart:hover {
+    border-color: red;
+}
+
+.searchBox ul {
+    position: absolute;
+    display: flex;
+    top: 110px;
+    left: 220px;
+}
+
+.searchBox ul li a {
+    color: #333;
+    font-size: 16px;
+    margin-right: 22px;
+    text-decoration: none;
+}
+
+.searchBox ul li a:hover {
+    color: red;
+}
+
+.container {
+    position: relative;
+}
+
+.mainPic {
+    width: 450px;
+    height: 450px;
+}
+
+.mainPic img {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: 0;
+}
+
+#sf {
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    opacity: 0.3;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+    cursor: move;
+}
+
+.bigPic {
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    left: 450px;
+    top: 0;
+    z-index: 2;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.bigPic img {
+    width: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.font {
+    width: 700px;
+    position: absolute;
+    left: 470px;
+    top: 0;
+}
+
+.font p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.font .dollar {
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    font-size: 16px;
+    color: red;
+}
+
+.font .price {
+    position: absolute;
+    top: 195px;
+    left: 35px;
+    font-size: 22px;
+    color: red;
+}
+
+.inputBox {
+    width: 58px;
+    height: 46px;
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    text-align: center;
+}
+
+.inputBox .inputs {
+    width: 43px;
+    height: 46px;
+    border: 1px solid rgb(204, 204, 204);
+    border-right: none;
+}
+
+.inputs input {
+    width: 43px;
+    height: 43px;
+    border: none;
+    text-align: center;
+}
+
+.inputBox button {
+    position: absolute;
+    border: 1px solid rgb(204, 204, 204);
+    width: 15px;
+    height: 22px;
+}
+
+.inputBox .plus {
+    top: 0;
+    right: 0;
+}
+
+.inputBox .minus {
+    bottom: 0;
+    right: 0;
+}
+
+.font .cart {
+    width: 96px;
+    height: 46px;
+    background-color: red;
+    text-align: center;
+    position: absolute;
+    top: 298px;
+    left: 90px;
+}
+
+.font .cart a {
+    font-size: 16px;
+    color: #fff;
+    line-height: 46px;
+    text-decoration: none;
+}
+
+.smallPic {
+    width: 312px;
+    height: 58px;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.smallPic span {
+    font-size: 30px;
+    color: #666;
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+}
+
+.left,
+.right {
+    font-size: 30px;
+    color: #666;
+    position: absolute;
+    top: 510px;
+    /* left: 90px; */
+    cursor: pointer;
+}
+
+.left {
+    left: -0px;
+}
+
+.right {
+    left: 362px;
+}
+
+.smallPic ul {
+    position: absolute;
+    display: flex;
+}
+
+.smallPic ul li {
+    width: 58px;
+    height: 58px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.smallPic ul li img {
+    width: 58px;
+    height: 58px;
+}
+
+.back {
+    background-color: #fff;
+    height: 100%;
+    z-index: 999;
+    width: 30px;
+}
+
+footer {
+    background-color: #e3e4e5;
+}
+
+.line2,
+.line3,
+.line4,
+.line5 {
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    line-height: 18px;
+}
+
+.line2 .line,
+.line3 .line,
+.line4 .line,
+.line5 .line {
+    font-size: 12px;
+    line-height: 22px;
+    margin: 0 10px;
+}

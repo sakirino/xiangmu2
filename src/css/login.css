@@ -1,0 +1,200 @@
+header {
+    box-shadow: 0 -5px 10px #666;
+    height: 110px;
+    /* background-color: yellow; */
+}
+
+header .container {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+header .container .titleBox {
+    height: 100px;
+    width: 246px;
+    display: flex;
+    align-items: center;
+}
+
+header .container a div {
+    width: 150px;
+    height: 50px;
+    background: url(../img/icon.png);
+}
+
+header .container #title {
+    font-size: 24px;
+    width: 96px;
+    line-height: 100px;
+}
+
+
+/* banner */
+
+main {
+    height: 475px;
+    background: #e93854;
+}
+
+main .banner {
+    height: 475px;
+    background: url(../img/background.png) no-repeat;
+    position: relative;
+}
+
+
+/* 登陆框 */
+
+main .banner .loginBox {
+    position: absolute;
+    width: 346px;
+    height: 360px;
+    background-color: #fff;
+    top: 10px;
+    right: 0;
+}
+
+
+/* 二维码登陆框 */
+
+main .banner .loginBox .scanBtn,
+main .banner .loginBox .userBtn {
+    width: 173px;
+    height: 54px;
+    border-bottom: 1px solid #f4f4f4;
+    position: absolute;
+}
+
+main .banner .loginBox .scanBtn a,
+main .banner .loginBox .userBtn a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #666;
+    line-height: 56px;
+    text-align: center;
+    padding: 0 50px;
+    border-right: 1px solid #f4f4f4;
+}
+
+main .banner .loginBox .userBtn {
+    right: 0;
+    top: 0;
+}
+
+main .banner .loginBox .userBtn a {
+    border-right: none;
+}
+
+main .banner .loginBox .scanBtn a:hover,
+main .banner .loginBox .userBtn a:hover {
+    color: red;
+}
+
+main .banner .loginBox .QRcode {
+    background: url(../img/show.png) no-repeat;
+    height: 163px;
+    width: 170px;
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+}
+
+
+/* 用户名登陆框 */
+
+main .banner .loginBox .loginPage {
+    width: 346px;
+    position: absolute;
+    top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .banner .loginBox .loginPage .loginMessage {
+    opacity: 0;
+}
+
+main .banner .loginBox .loginPage .loginInput {
+    width: 304px;
+    height: 38px;
+    border: 1px solid #bdbdbd;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+main .banner .loginBox .loginPage .loginInput label {
+    width: 36px;
+    height: 36px;
+    border-right: 1px solid #bdbdbd;
+    background: url(../img/pwd-icons-new.png);
+    margin: 0;
+}
+
+main .banner .loginBox .loginPage .loginInput input {
+    margin: 10px 0 10px 20px;
+    font-size: 14px;
+    width: 240px;
+    height: 18px;
+}
+
+main .banner .loginBox .loginPage .forgetPass {
+    width: 304px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main .banner .loginBox .loginPage .forgetPass a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #666;
+}
+
+main .banner .loginBox .loginPage .forgetPass a:hover {
+    color: red;
+}
+
+main .banner .loginBox .loginPage .submitBtn {
+    width: 304px;
+    height: 38px;
+    background-color: red;
+    margin-top: 20px;
+}
+
+main .banner .loginBox .loginPage .submitBtn a {
+    text-align: center;
+    text-decoration: none;
+    line-height: 38px;
+    color: #fff;
+}
+
+
+/* 登陆框底部 */
+
+main .banner .loginBox .otherOption {
+    width: 346px;
+    height: 50px;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+main .banner .loginBox .otherOption div {
+    width: 16px;
+    height: 16px;
+    background: url(../img/pwd-icons-new.png) -104px -423px;
+}
+
+main .banner .loginBox .otherOption a {
+    text-decoration: none;
+    font-size: 14px;
+    color: red;
+    /* position: absolute;
+    right: 20px; */
+    margin-left: 5px;
+}

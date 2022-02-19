@@ -1,0 +1,334 @@
+    span {
+        font-size: 8px;
+    }
+    
+    body {
+        position: relative;
+    }
+    
+    .dc a {
+        position: fixed;
+        background: url(../img/icon.png) -335px 0px;
+        width: 33px;
+        height: 135px;
+        top: 30%;
+        right: 0;
+    }
+    
+    .dc:hover a {
+        /* position: fixed; */
+        background: url(../img/icon.png) -367px 0px;
+    }
+    /* 头部 */
+    
+    header {
+        box-shadow: 0 -5px 10px #666;
+        height: 110px;
+        /* background-color: yellow; */
+    }
+    
+    header .container {
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: space-between; */
+    }
+    
+    header .container .titleBox {
+        height: 100px;
+        width: 246px;
+        display: flex;
+        align-items: center;
+    }
+    
+    header .container a div {
+        width: 150px;
+        height: 50px;
+        background: url(../img/icon.png);
+    }
+    
+    header .container #title {
+        font-size: 24px;
+        width: 96px;
+        line-height: 100px;
+    }
+    
+    header .container #haveAcc {
+        font-size: 16px;
+        padding-top: 55px;
+        margin-left: 756px;
+    }
+    
+    header .container #haveAcc a {
+        text-decoration: none;
+        color: red;
+    }
+    /* 主体 */
+    /* 进度条 */
+    
+    main {
+        margin-top: 80px;
+    }
+    
+    main .jdt {
+        display: flex;
+        height: 55px;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    
+    main .jdt .circle {
+        width: 24px;
+        height: 34px;
+        background: url(../img/reg-icon.png) -45px -200px;
+        text-align: center;
+        /* line-height: 24px; */
+        color: #ccc;
+        /* margin-bottom: 10px; */
+    }
+    
+    main .jdt .line {
+        width: 124px;
+        height: 10px;
+        background: url(../img/reg-icon.png) 0px -99px;
+        margin-top: 5px;
+    }
+    
+    main .jdt .pass-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main .jdt p {
+        /* margin-top: 10px; */
+        color: #ccc;
+    }
+    /* 表单 */
+    /* step1 */
+    /* 手机输入框 */
+    
+    main .step1 {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main .telBox {
+        height: 90px;
+    }
+    
+    main .telInput {
+        display: flex;
+    }
+    
+    .telInput:hover .telLeft,
+    .telInput:hover .telRight {
+        border-color: #000;
+    }
+    
+    .telLeft {
+        width: 90px;
+        height: 50px;
+        border: 1px solid #ccc;
+        border-right: none;
+    }
+    
+    main .telRight {
+        width: 290px;
+        height: 50px;
+        border: 1px solid #ccc;
+        position: relative;
+    }
+    
+    main .telRight input {
+        height: 20px;
+        width: 190px;
+        margin: 16px 2px 11px 20px;
+        font-size: 14px;
+    }
+    
+    main .telRight .telIcon {
+        display: none;
+        width: 16px;
+        height: 16px;
+        background: url(../img/icon.png) 0px -287px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    /* 验证码点击框 */
+    
+    .codeBtn {
+        width: 380px;
+        height: 50px;
+        border: 1px solid #ccc;
+        margin-bottom: 50px
+    }
+    
+    .codeBtn a {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .codeBtn:hover {
+        border-color: #000;
+    }
+    /* 验证码输入框 */
+    
+    main .codeBox {
+        display: none;
+    }
+    
+    main .codeBox .codeInput {
+        display: flex;
+    }
+    
+    main .codeBox .codeLeft {
+        width: 290px;
+        height: 50px;
+        border: 1px solid #ccc;
+    }
+    
+    main .codeBox .codeLeft:hover {
+        border-color: #000;
+    }
+    
+    main .codeBox .codeLeft label {
+        margin-left: 20px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        color: #ccc;
+    }
+    
+    main .codeBox .codeLeft input {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+    
+    main .codeBox .codeRight {
+        text-align: center;
+        width: 90px;
+        height: 50px;
+        border: 1px solid #ccc;
+        border-left: none;
+    }
+    
+    main .codeBox .codeRight p {
+        font-size: 8px;
+        margin-top: 14px;
+        color: #333;
+    }
+    
+    main .codeBox .codeRight a {
+        text-decoration: none;
+        color: #333;
+    }
+    /* 下一步 */
+    
+    main .nextStep {
+        width: 380px;
+        height: 50px;
+        background-color: red;
+    }
+    
+    main .nextStep a {
+        color: #fff;
+        height: 50px;
+        width: 380px;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+    }
+    /* step2 */
+    
+    main .step2 {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main .step2 .regBox {
+        height: 90px;
+        width: 380px;
+    }
+    
+    main .step2 .regBox .regInput {
+        height: 50px;
+        width: 380px;
+        border: 1px solid #ccc;
+        position: relative;
+    }
+    
+    main .step2 .regBox .regInput label {
+        margin-left: 20px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        color: #ccc;
+    }
+    
+    main .step2 .regBox .regInput input {
+        margin-left: 40px;
+        font-size: 14px;
+        width: 212px;
+    }
+    
+    main .step2 .regBox .regInput .regIcon {
+        display: none;
+        width: 16px;
+        height: 16px;
+        background: url(../img/icon.png) 0px -287px;
+        position: absolute;
+        right: 12px;
+        top: 17px;
+    }
+    
+    main .step2 .regBox .regInput:hover {
+        border-color: #000;
+    }
+    
+    main .step2 .reg {
+        width: 380px;
+        height: 50px;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main .step2 .reg input {
+        background-color: red;
+        color: #fff;
+    }
+    /* main .step2 .reg a {
+        color: #fff;
+        height: 50px;
+        width: 380px;
+        line-height: 50px;
+        text-align: center;
+        text-decoration: none;
+    } */
+    /* 注册成功 */
+    /* 效果 */
+    
+    .focus {
+        border-color: #000!important
+    }
+    
+    .circleDone {
+        background: url(../img/reg-icon.png) 0px 0px!important;
+    }
+    
+    .lineDone {
+        background: url(../img/reg-icon.png) 0px -129px!important;
+    }
+    
+    .circleOn-ready {
+        background: url(../img/reg-icon.png) 0px -200px!important;
+    }

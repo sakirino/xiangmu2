@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东注册</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/registry.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+
+<body>
+    <div class="dc">
+        <a href="javascript:void(0);"></a>
+    </div>
+    <header>
+        <div class="container">
+            <div class="titleBox">
+                <a href="JD mainPage.html">
+                    <div></div>
+                </a>
+                <div id="title">欢迎注册</div>
+            </div>
+            <div id="haveAcc">已有账户？<a href="JD login.html">请登录&gt;</a></div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <!-- 进度条 -->
+            <div class="jdt">
+                <div class="pass-box">
+                    <div class="circle" style="color: #fff; background: url(../img/reg-icon.png) 0px -200px;">1</div>
+                    <p style="color:green;">验证手机号</p>
+                </div>
+                <div class="line"></div>
+                <div class="pass-box">
+                    <div class="circle">2</div>
+                    <p>填写账号信息</p>
+                </div>
+                <div class="line"></div>
+                <div class="pass-box">
+                    <div class="circle">3</div>
+                    <p>注册成功</p>
+                </div>
+            </div>
+            <!-- 表单 -->
+            <form action="http://localhost/JS2112/Project%20JD/php/reg.php" method="post" class="registry_form">
+                <!-- step1 -->
+                <div class="step1 center-block" style="display: block;">
+                    <!-- 手机输入框 -->
+                    <div class="telBox">
+                        <div class="telInput">
+                            <div class="telLeft"></div>
+                            <div class="telRight"><input type="text" name="tel" placeholder="建议使用常用手机号">
+                                <div class="telIcon"></div>
+                            </div>
+                        </div>
+                        <span></span>
+                    </div>
+                    <!-- 验证码点击框 -->
+                    <div class="codeBtn"><a href="javascript:void(0);" class="center-block">点击按钮进行验证</a></div>
+                    <!-- 验证码输入框 -->
+                    <div class="codeBox" style="height: 100px;">
+                        <div class="codeInput">
+                            <div class="codeLeft">
+                                <label for="">手机验证码</label>
+                                <input type="text" placeholder="输入验证码">
+                            </div>
+                            <div class="codeRight">
+                                <p class="center-block"></p>
+                                <a href="javascript:void(0);" class="center-block" style="display: none;">重新获取</a>
+                            </div>
+                        </div>
+                        <span></span>
+                    </div>
+                    <!-- 下一步 -->
+                    <div class="nextStep">
+                        <a href="javascript:void(0);" class="center-block">下一步</a>
+                    </div>
+                </div>
+                <div class="step2 center-block " style="display: none;">
+                    <div class="regBox">
+                        <div class="regInput">
+                            <label for=" ">用&emsp;户&emsp;名</label>
+                            <input type="text" placeholder="您的账户名和登陆名 " name="username">
+                            <div class="regIcon"></div>
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="regBox">
+                        <div class="regInput">
+                            <label for=" ">设 置 密 码</label>
+                            <input type="password" placeholder="建议使用两种或两种以上字符组合" name="password">
+                            <div class="regIcon "></div>
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="regBox">
+                        <div class="regInput ">
+                            <label for=" ">确 认 密 码</label>
+                            <input type="password" placeholder="请再次输入密码" name="repass">
+                            <div class="regIcon "></div>
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="reg">
+                        <!-- <a href="javascript:void(0); " class="center-block ">立即注册</a> -->
+                        <input type="submit" name="submit" class="submitBtn" value="立 即 注 册">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+    </main>
+</body>
+
+</html>
+<script src=" https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js "></script>
+<script src="../js/registry.js "></script>

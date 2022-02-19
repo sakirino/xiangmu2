@@ -1,0 +1,502 @@
+header {
+    background-color: #e3e4e5;
+    height: 30px;
+}
+
+header .container {
+    position: relative;
+}
+
+header .locationBox {
+    position: absolute;
+    left: 0;
+}
+
+header .locationBox a {
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+header ul {
+    display: flex;
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+header .tagBox ul li a {
+    text-decoration: none;
+    padding: 0 15px;
+    border-left: 1px solid #ccc;
+}
+
+header .tagBox ul li a:hover {
+    color: red;
+}
+
+.searchBox {
+    height: 140px;
+    background-color: #fff;
+}
+
+.searchBox .container {
+    position: relative;
+}
+
+.searchBox .logoB {
+    width: 190px;
+    height: 120px;
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+}
+
+.searchBox .Search {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.Search img {
+    width: 125px;
+    height: 40px;
+    position: absolute;
+    top: 18px;
+    left: 350px;
+    display: none;
+}
+
+.searchActive {
+    border-bottom: 1px solid red;
+}
+
+.searchInput {
+    width: 488px;
+    height: 32px;
+    border: 1px solid red;
+    position: relative;
+    left: 550px;
+    top: 25px;
+}
+
+.searchInput input {
+    font-size: 12px;
+    margin-left: 17px;
+    margin-top: 2px;
+    width: 400px;
+    height: 26px;
+    color: #333;
+}
+
+.searchInput button {
+    position: absolute;
+    right: 0;
+    border: none;
+    width: 58px;
+    height: 31px;
+    background-color: red;
+}
+
+.searchInput button span {
+    color: #fff;
+    cursor: pointer;
+}
+
+.cart {
+    width: 130px;
+    height: 32px;
+    border: 1px solid #eee;
+    position: absolute;
+    left: 1080px;
+    top: 25px;
+}
+
+.cart span {
+    line-height: 32px;
+    color: red;
+    margin-left: 25px;
+}
+
+.cart a {
+    line-height: 32px;
+    color: red;
+    text-decoration: none;
+    font-size: 12px;
+    display: inline;
+}
+
+.cart:hover {
+    border-color: red;
+}
+
+.searchBox ul {
+    position: absolute;
+    display: flex;
+    top: 110px;
+    left: 220px;
+}
+
+.searchBox ul li a {
+    color: #333;
+    font-size: 16px;
+    margin-right: 22px;
+    text-decoration: none;
+}
+
+.searchBox ul li a:hover {
+    color: red;
+}
+
+main {
+    height: 1600px;
+    background-color: #e3e4e5;
+}
+
+main .container {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.menu {
+    position: relative;
+    z-index: 3;
+}
+
+.menu ul {
+    overflow: hidden;
+    padding: 5px 0;
+    height: 468px;
+    background-color: #fefefe;
+    color: #636363;
+    margin-top: 10px;
+    width: 180px;
+}
+
+.menu ul li {
+    height: 25px;
+    line-height: 25px;
+    padding-left: 12px;
+}
+
+.menu ul li.active {
+    background-color: #d9d9d9;
+}
+
+.menu li a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: red;
+}
+
+.menu li span {
+    padding: 0 2px;
+    font-size: 12px;
+}
+
+.cartlist {
+    position: absolute;
+    left: 180px;
+    top: 10px;
+    width: 998px;
+    height: 468px;
+    border: 1px solid #f7f7f7;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    display: none;
+    transition: top 0.3s ease;
+}
+
+.item {
+    padding: 20px;
+    display: none;
+}
+
+
+/* top */
+
+.top {
+    display: flex;
+    width: 100%;
+    height: 42px;
+    background-color: rgb(243, 243, 243);
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #e9e9e9;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.l1 {
+    display: flex;
+    align-items: center;
+}
+
+.l1 div {
+    margin-right: 5px;
+}
+
+.l1 div input {
+    margin-top: 3px;
+}
+
+
+/* goods */
+
+.goods {
+    background-color: rgb(255, 244, 232);
+    height: 119px;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #f1f1f1;
+    border-top: 2px solid #aaa;
+    display: flex;
+    /* justify-content: space-around;  */
+}
+
+.cb {
+    padding-left: 69px;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.img {
+    width: 300px;
+    padding-top: 15px;
+    margin-left: 75px;
+    display: flex;
+    text-align: start;
+}
+
+.img img {
+    width: 80px;
+    height: 80px;
+}
+
+.img div {
+    width: 220px;
+    margin-left: 15px;
+}
+
+.img a {
+    width: 220px;
+    height: 40px;
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+    line-height: 20px;
+    white-space: wrap;
+}
+
+.price {
+    padding-top: 15px;
+    margin-left: 95px;
+}
+
+.quantity {
+    padding-top: 15px;
+    margin-left: 105px;
+}
+
+.quantity .q1 {
+    display: flex;
+    align-items: center;
+}
+
+.quantity p {
+    margin: 0 25px;
+}
+
+.quantity button {
+    width: 15px;
+    height: 18px;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgb(203, 203, 203);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity input {
+    width: 46px;
+    height: 18px;
+    border-top: 1px solid rgb(203, 203, 203);
+    border-bottom: 1px solid rgb(203, 203, 203);
+    text-align: center;
+}
+
+.sum {
+    padding-top: 15px;
+    margin-left: 105px;
+}
+
+.del {
+    padding-top: 15px;
+    margin-left: 100px;
+    text-decoration: none;
+}
+
+.del a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #666;
+    ;
+}
+
+.bottom {
+    height: 52px;
+    width: 100%;
+    border: 1px solid rgb(240, 240, 240);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom .l1 {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.bottom .left {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.bottom .right {
+    width: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom .left .chooseDel {
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+}
+
+.bottom .left .chooseDel:hover {
+    color: red;
+}
+
+.bottom .left .cartDel {
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+}
+
+.bottom .left .cartDel:hover {
+    color: red;
+}
+
+.bottom .right .coBox {
+    width: 94px;
+    height: 52px;
+    background-color: red;
+    text-align: center;
+}
+
+.bottom .right .checkout {
+    line-height: 52px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.bottom .right .totalPrice {
+    width: 170px;
+}
+
+.bottom .right .totalPrice span {
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+}
+
+.bottom .right .totalPrice .total {
+    font-size: 16px;
+    color: #e2231a;
+    font-family: verdana;
+    font-weight: 700;
+}
+
+.bottom .right .numBox {
+    width: 140px;
+}
+
+.bottom .right .numBox span {
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+}
+
+.bottom .right .numBox .chooseNum {
+    color: #e2231a;
+    font-weight: 700;
+    font-family: verdana;
+    margin: 0 5px;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 333;
+}
+
+.mask img {
+    width: 500px;
+    display: block;
+}
+
+.mask p {
+    width: 500px;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.mask span {
+    position: absolute;
+    cursor: pointer;
+    font-size: 30px;
+    top: 100px;
+    right: 500px;
+}
+
+footer {
+    background-color: #e3e4e5;
+}
+
+.line2,
+.line3,
+.line4,
+.line5 {
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    line-height: 18px;
+}
+
+.line2 .line,
+.line3 .line,
+.line4 .line,
+.line5 .line {
+    font-size: 12px;
+    line-height: 22px;
+    margin: 0 10px;
+}
